@@ -1,0 +1,23 @@
+// Cloudflare Workers（纯静态资源，无 Worker 脚本）部署配置
+// 文档：https://developers.cloudflare.com/workers/static-assets/
+//       https://developers.cloudflare.com/workers/wrangler/configuration/
+// 只有 ./public 目录会被上传；HANDOFF.md / AGENTS.md / README.md 等不在其中，不会公开。
+{
+  "name": "hima-ucars-popup",
+  // 部署当天的日期即可；如本机 wrangler 较旧不支持该日期，会提示并回退
+  "compatibility_date": "2026-10-10",
+
+  // 纯静态：不需要 "main"（assets-only Worker）
+  "assets": {
+    "directory": "./public"
+  },
+
+  // 关闭 *.workers.dev 和预览链接：workers.dev 在中国大陆被屏蔽，绝不能用于二维码
+  "workers_dev": false,
+  "preview_urls": false,
+
+  // 自定义域名（已绑定线上）
+  "routes": [
+    { "pattern": "popup.abigaillab.com", "custom_domain": true }
+  ]
+}

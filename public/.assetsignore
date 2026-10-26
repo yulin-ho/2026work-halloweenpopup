@@ -1,0 +1,7 @@
+# 部署时不上传的文件（格式同 .gitignore）
+# 文档：https://developers.cloudflare.com/workers/static-assets/binding/#ignoring-assets
+.DS_Store
+Thumbs.db
+*.md
+*.zip
+.env*

@@ -1,0 +1,23 @@
+# 密钥与本地凭据 —— 绝不提交
+.env
+.env.*
+.dev.vars
+.dev.vars.*
+*.pem
+*.key
+id_*
+*_ed25519*
+*_rsa*
+.ssh/
+cloudflare*.ini
+# wrangler / node
+.wrangler/
+node_modules/
+# 系统与临时文件
+.DS_Store
+Thumbs.db
+*.swp
+*~
+# 截图与打包产物
+site-shots/
+*.zip
