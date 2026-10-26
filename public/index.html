@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="format-detection" content="telephone=no">
+<meta name="theme-color" content="#17191f">
+<!-- 页面标题与分享描述：如需修改，请同时修改此处（微信分享会读取） -->
+<title>下楼逛逛 · 前海人寿金融中心秋日车生活嘉年华 · UCARS</title>
+<meta name="description" content="UCARS 城市车生活体验站 · 前海人寿金融中心秋日车生活嘉年华 · 2026年10月27日—31日（万圣夜） · 前广场 · 看展车 / 现场打卡 / 打卡领好礼">
+<link rel="icon" href="data:,">
+<link rel="stylesheet" href="assets/style.css">
+<link rel="preload" as="image" href="assets/img/hero-final-effect.png">
+</head>
+<body>
+<a class="skip" href="#main">跳到正文</a>
+
+<!-- ============ 1. 首屏（内容由 assets/config.js → hero 生成） ============ -->
+<header id="hero" class="hero" data-section="hero">
+  <noscript>
+    <div class="wrap noscript">
+      <p class="brand">UCARS</p>
+      <h1>下楼逛逛</h1>
+      <p>前海人寿金融中心秋日车生活嘉年华 · 2026年10月27日（周二）—31日（周六万圣夜） · 前海人寿金融中心前广场 · 打卡领好礼每日12点开始</p>
+      <p>请开启浏览器 JavaScript 以查看完整活动信息。</p>
+    </div>
+  </noscript>
+</header>
+
+<!-- ============ 气氛海报（剪影，不替换 hero） ============ -->
+<section id="atmosphere" class="sec atmosphere-sec" data-section="atmosphere" aria-label="活动气氛"></section>
+
+<nav id="nav" class="nav" aria-label="页面导航"></nav>
+
+<main id="main">
+  <!-- ============ 专属购车权益 ============ -->
+  <section id="benefits" class="sec" data-section="benefits"></section>
+
+  <!-- ============ 四大生活场景 ============ -->
+  <section id="scenes" class="sec" data-section="scenes"></section>
+
+  <!-- ============ 周末去哪儿（装备互动） ============ -->
+  <section id="interaction" class="sec ucars-play-section" data-section="interaction"></section>
+
+  <!-- ============ 养车选UCARS（周末板块下方） ============ -->
+  <section id="care" class="sec ucars-care-section" data-section="care"></section>
+
+  <!-- ============ 现场体验 ============ -->
+  <section id="experience" class="sec" data-section="experience"></section>
+
+  <!-- ============ 参与方式 ============ -->
+  <section id="join" class="sec" data-section="join"></section>
+
+  <!-- ============ 打卡领好礼 ============ -->
+  <section id="gift" class="sec" data-section="gift"></section>
+
+  <section id="lottery" class="sec" data-section="lottery" hidden></section>
+
+  <!-- ============ 现场导览（已下线，由 app.js / hidden 隐藏） ============ -->
+  <section id="map" class="sec" data-section="map" hidden>
+    <div class="wrap">
+      <div id="map-head"></div>
+      <figure class="map-fig">
+        <img class="map-photo" src="assets/img/site-guide.png" alt="前海人寿金融中心前广场现场导览" loading="lazy" decoding="async" width="1200" height="840">
+      </figure>
+      <div id="map-foot"></div>
+    </div>
+  </section>
+
+  <!-- ============ 温馨提示 ============ -->
+  <section id="tips" class="sec" data-section="tips"></section>
+</main>
+
+<footer id="footer" class="footer"></footer>
+<dialog id="vehicle-dialog" class="vehicle-dialog" aria-labelledby="vehicle-dialog-title">
+  <button class="vehicle-dialog-close" type="button" data-close-vehicle aria-label="关闭车型介绍">×</button>
+  <div id="vehicle-dialog-content"></div>
+</dialog>
+<div id="toast" class="toast" role="status" aria-live="polite"></div>
+
+<script src="assets/config.js"></script>
+<script src="assets/app.js"></script>
+</body>
+</html>

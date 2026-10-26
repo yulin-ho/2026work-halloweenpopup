@@ -1,0 +1,13 @@
+# Cloudflare Workers 静态资源响应头（本文件不会被当作网页文件对外提供）
+# 文档：https://developers.cloudflare.com/workers/static-assets/headers/
+# 默认 Cache-Control 为 "public, max-age=0, must-revalidate" + ETag：
+#   HTML / config.js / app.js / style.css 保持默认，改文案后访客刷新即见新内容。
+# 图片不常改，给 1 天浏览器缓存；如替换图片请改文件名或接受最多 1 天旧图。
+
+/*
+  X-Content-Type-Options: nosniff
+  Referrer-Policy: strict-origin-when-cross-origin
+  Permissions-Policy: camera=(), microphone=(), geolocation=()
+
+/assets/img/*
+  Cache-Control: public, max-age=86400
